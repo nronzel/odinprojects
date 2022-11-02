@@ -1,0 +1,78 @@
+html 
+{
+    box-sizing: border-box;
+}
+*, *:before, *:after 
+{
+    box-sizing: inherit;
+}
+.container 
+{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 2fr 2fr 10fr 2fr;
+    grid-auto-rows: 1fr;
+    gap: 15px;
+}
+.header 
+{
+    grid-column: 1 / 3;
+    text-align: center;
+    background-color: yellow;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 800;
+    border-radius: 15px;
+    padding: 1rem;
+}
+.sidebar 
+{
+    grid-column: 1 /2 ;
+    grid-row: 2 / 4;
+    text-align: center;
+    background-color: orange;
+    border-radius: 15px;
+    color: white;
+    font-weight: 800;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.nav 
+{
+    grid-column: 2 / 3;
+    text-align: center;
+    background-color: cyan;
+    border-radius: 15px;
+    color: white;
+    font-weight: 800;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.article 
+{
+    grid-column: 2 / 3;
+    text-align: center;
+    background-color: grey;
+    border-radius: 15px;
+    color: white;
+    font-weight: 800;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.article p 
+{
+    font-size: .895rem;
+    font-weight: 200;
+}
+.footer 
+{
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    text-align: center;
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+    font-weight: 800;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
