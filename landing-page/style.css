@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
 
+/* Define main colors */
 :root {
     --dark-blue: #1f2937;
     --white: #f9faf8;
@@ -19,6 +20,8 @@ html {
 *:before,
 :after{
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 ul {
@@ -45,6 +48,7 @@ p {
 body {
     display: flex;
     flex-direction: column;
+
 }
 
 header {
@@ -60,6 +64,7 @@ button {
     background-color: var(--button-color);
     color: var(--white);
     font-weight: 600;
+    font-family: 'Roboto', sans-serif;
     border: 0;
     border-radius: 5px;
 }
@@ -77,6 +82,19 @@ h1 {
     gap: 16px;
     align-items: center;
     padding-right: 5rem;
+}
+
+a:hover {
+    color: var(--button-color);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-blue);
+    height: 80px;
+
 }
 
 .logo {
@@ -103,8 +121,10 @@ h1 {
     align-items: flex-start;
     flex: 1;
     padding-left: 9rem;
-    padding-right: 0;
-    margin-right: 0;
+}
+
+.hero-left p {
+    padding: 20px 0;
 }
 
 .hero-right {
@@ -119,16 +139,17 @@ h1 {
     padding: 1rem;
 }
 
-.content {
+.card-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 50px;
+    margin-bottom: 70px;
 }
 
 .info-header {
     font-size: 24px;
-    padding: 5px 0;
-
+    padding-top: 40px;
 }
 
 .cards {
@@ -155,4 +176,34 @@ h1 {
 
 .text {
     text-align: center;
+    display: flex;
+}
+
+.text p {
+    color: var(--dark-blue);
+    font-weight: 200;
+}
+
+.quote-section {
+    display: flex;
+    height: 200px;
+    background-color: var(--grey);
+    margin-top: 50px;
+    flex: 1;
+    flex-wrap: wrap;
+    padding: 150px;
+}
+
+.quote {
+    font-size: 36px;
+    width: 100%;
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    padding-top: 15px;
+
 }
