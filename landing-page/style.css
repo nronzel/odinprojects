@@ -1,0 +1,47 @@
+@root {
+    --dark-blue: #1f2937;
+    --text-white: #f9faf8
+    --secondary: #e5e7eb;
+    --button-color: #3883F6;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+:after{
+    box-sizing: inherit;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display:flex;
+    justify-content: space-around;
+}
+
+.header-menu {
+    display:flex;
+    gap: 16px;
+    align-items: center;
+}
