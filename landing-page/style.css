@@ -227,13 +227,19 @@ a:hover {
 /*  Quote End  */
 
 /*  Call to Action  */
-.cta-wrapper {
+.cta {
+    display: flex;
+    justify-content: center;
+}
+
+.cta-box {
     background-color: var(--button-color);
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin: 70px 150px;
     border-radius: 5px;
+    min-width: 450px;
 }
 
 .cta-text {
@@ -244,6 +250,7 @@ a:hover {
 .cta-button {
     border: 2px solid var(--white);
     border-radius: 7px;
+    margin-right: 50px;
 }
 
 .cta-button button:hover {
@@ -256,6 +263,7 @@ a:hover {
     transform: translateY(3px);
 }
 
+/*  Sets all elements with this class to have a "pointer" cursor; e.g. buttons, links, etc.  */
 .pointer {
     cursor: pointer;
 }
