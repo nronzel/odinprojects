@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
 :root {
     --dark-blue: #1f2937;
     --white: #f9faf8;
@@ -7,7 +11,8 @@
 
 html {
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16;
 }
 
 *,
@@ -25,10 +30,15 @@ ul {
 
 li {
     text-decoration: none;
+    font-size: 18px;
 }
 
 a {
     text-decoration: none;
+    color: var(--grey);
+}
+
+p {
     color: var(--grey);
 }
 
@@ -39,17 +49,110 @@ body {
 
 header {
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: var(--dark-blue);
+    height: 50px;
+}
+
+button {
+    width: 100px;
+    padding: 7px 8px;
+    background-color: var(--button-color);
+    color: var(--white);
+    font-weight: 600;
+    border: 0;
+    border-radius: 5px;
+}
+
+h1 {
+    color: var(--white);
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .header-menu {
     display:flex;
     gap: 16px;
     align-items: center;
+    padding-right: 5rem;
 }
 
 .logo {
     font-size: 24px;
     color: #f9faf8;
+    align-items: center;
+    display: flex;
+    padding-left: 9rem;
+}
+
+.hero {
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+    padding-left: 9rem;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.hero-right {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin: 5rem;
+    max-width: 480px;
+    min-width: 212px;
+    padding: 1rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-header {
+    font-size: 24px;
+    padding: 5px 0;
+
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image {
+    width: 150px;
+    height: 150px;
+    border: 3px solid var(--button-color);
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.text {
+    text-align: center;
 }
