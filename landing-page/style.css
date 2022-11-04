@@ -1,8 +1,11 @@
+/* -Font imports-
+ */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
 
-/* Define main colors */
+/* -Define main colors-
+ */
 :root {
     --dark-blue: #1f2937;
     --white: #f9faf8;
@@ -10,6 +13,8 @@
     --button-color: #3883F6;
 }
 
+/*  -Main Selectors-
+ */
 html {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
@@ -77,24 +82,27 @@ h1 {
     margin-top: 0;
 }
 
-.header-menu {
-    display:flex;
-    gap: 16px;
-    align-items: center;
-    padding-right: 5rem;
-}
-
-a:hover {
-    color: var(--button-color);
-}
-
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--dark-blue);
     height: 80px;
+}
 
+a:hover {
+    color: var(--button-color);
+}
+
+/*  - Class Selectors -
+*/
+
+/*  Header  */
+.header-menu {
+    display:flex;
+    gap: 16px;
+    align-items: center;
+    padding-right: 5rem;
 }
 
 .logo {
@@ -104,7 +112,9 @@ footer {
     display: flex;
     padding-left: 9rem;
 }
+/* Header End  */
 
+/*  Hero  */
 .hero {
     background-color: var(--dark-blue);
     display: flex;
@@ -138,7 +148,9 @@ footer {
     min-width: 212px;
     padding: 1rem;
 }
+/*  Hero End  */
 
+/*  Cards  */
 .card-wrapper {
     display: flex;
     flex-direction: column;
@@ -183,7 +195,9 @@ footer {
     color: var(--dark-blue);
     font-weight: 200;
 }
+/*  Cards End  */
 
+/*  Quote  */
 .quote-section {
     display: flex;
     height: 200px;
@@ -205,5 +219,5 @@ footer {
     justify-content: flex-end;
     width: 100%;
     padding-top: 15px;
-
 }
+/*  Quote End  */
